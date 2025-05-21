@@ -1,15 +1,17 @@
+import 'package:authentication_page/screens/auth/reset_password_page.dart';
+import 'package:authentication_page/screens/timetable/timetable_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 // Authentication & Onboarding
-import 'screens/login_page.dart';
-import 'screens/verify_email_page.dart';
+import 'screens/auth/login_page.dart';
+import 'screens/auth/verify_email_page.dart';
 import 'screens/home_page.dart';
 import 'screens/register_page.dart';
-import 'screens/reset_password_page.dart';
-import 'screens/two_factor_page.dart';
-import 'screens/phone_auth_page.dart';
+
+import 'screens/auth/two_factor_page.dart';
+import 'screens/auth/phone_auth_page.dart';
 
 // Student Feature Pages
 import 'screens/academia_page.dart';
@@ -53,6 +55,7 @@ class MyApp extends StatelessWidget {
         '/sports': (context) => const SportsPage(),
         '/library': (context) => const LibraryPage(),
         '/settings': (context) => const SettingsPage(),
+        '/timetable': (context) => const TimetableScreen(),
       },
     );
   }
